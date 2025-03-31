@@ -1,0 +1,18 @@
+{
+  "name": "simple-web-proxy",
+  "version": "1.0.0",
+  "description": "Anonymous web proxy for unrestricted access to online content",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "pm2": "pm2 start index.js --name simple-web-proxy",
+    "pm2:restart": "pm2 restart simple-web-proxy",
+    "pm2:stop": "pm2 stop simple-web-proxy",
+    "pm2:logs": "pm2 logs simple-web-proxy"
+  },
+  "author": "",
+  "license": "GPLv3",
+  "engines": {
+    "node": ">=12.0.0"
+  }
+}
