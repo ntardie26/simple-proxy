@@ -1,6 +1,6 @@
 # Simple Web Proxy
 
-No tracking, no useless stuff, just a dead simple proxy.
+No useless stuff, just a  simple proxy.
 
 ## Features
 
