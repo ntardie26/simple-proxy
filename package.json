@@ -1,18 +1,24 @@
 {
   "name": "simple-web-proxy",
-  "version": "1.0.0",
-  "description": "Anonymous web proxy for unrestricted access to online content",
+  "version": "0.1.1",
+  "description": "A straightforward web proxy service",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "pm2": "pm2 start index.js --name simple-web-proxy",
-    "pm2:restart": "pm2 restart simple-web-proxy",
-    "pm2:stop": "pm2 stop simple-web-proxy",
-    "pm2:logs": "pm2 logs simple-web-proxy"
+    "build": "webpack --mode production",
+    "dev": "webpack --mode development --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": ["proxy", "web-proxy", "unblocked"],
   "author": "",
-  "license": "GPLv3",
-  "engines": {
-    "node": ">=12.0.0"
+  "license": "GPL-3.0",
+  "dependencies": {
+    "proxycore-lib": "^1.8.2",
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "ts-loader": "^9.4.4",
+    "typescript": "^5.1.6",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
   }
 }

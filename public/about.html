@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>About | Simple Web Proxy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Learn about Simple Web Proxy - a lightweight, privacy-focused web proxy." />
+    <meta name="theme-color" content="#4285f4">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      .about-container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 2rem;
+        text-align: left;
+      }
+      
+      .about-section {
+        margin-bottom: 2rem;
+      }
+      
+      .about-title {
+        color: var(--primary-color);
+        margin-bottom: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="app-container">
+      <header class="header">
+        <div class="links-row">
+          <a href="/">Home</a>
+          <a href="/faq">FAQ</a>
+          <a href="https://github.com/3kh0/Oxide">Source</a>
+          <a href="/credits">Credits</a>
+        </div>
+      </header>
+      
+      <main class="main-content">
+        <div class="about-container">
+          <h1 class="about-title">About Simple Web Proxy</h1>
+          
+          <div class="about-section">
+            <h2>Our Mission</h2>
+            <p>Simple Web Proxy was created with one goal in mind: provide a straightforward way to access the web without restrictions, tracking, or unnecessary features. We believe internet access should be simple, private, and available to everyone.</p>
+          </div>
+          
+          <div class="about-section">
+            <h2>What Makes Us Different</h2>
+            <p>Unlike other proxy services that bombard you with ads, collect your data, or limit your browsing capabilities, Simple Web Proxy focuses on what matters most: a clean, fast browsing experience with robust privacy features.</p>
+            
+            <ul>
+              <li><strong>Minimalist Design</strong> - No distractions, just the content you want</li>
+              <li><strong>Privacy-Focused</strong> - Built with your digital privacy as a priority</li>
+              <li><strong>Open Source</strong> - Transparent code anyone can review and contribute to</li>
+              <li><strong>No User Tracking</strong> - We don't collect or store any of your browsing data</li>
+            </ul>
+          </div>
+          
+          <div class="about-section">
+            <h2>How It Works</h2>
+            <p>Simple Web Proxy acts as an intermediary between you and the websites you visit. When you enter a URL or search query, our servers fetch the content for you, allowing you to browse websites that might otherwise be restricted in your location or network.</p>
+          </div>
+          
+          <div class="about-section">
+            <h2>Looking Forward</h2>
+            <p>We're constantly working to improve Simple Web Proxy with new features and optimizations. If you have suggestions or want to contribute, check out our GitHub repository.</p>
+          </div>
+        </div>
+      </main>
+      
+      <footer class="footer">
+        <p>Simple Web Proxy - Your gateway to unrestricted internet</p>
+      </footer>
+    </div>
+    <script>
+      if (localStorage.getItem('darkMode') === 'enabled') {
+        document.body.classList.add('dark-mode');
+      }
+    </script>
+  </body>
+</html>

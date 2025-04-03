@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Page Not Found | Simple Web Proxy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#4285f4">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      .error-container {
+        text-align: center;
+        padding: 2rem;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+      
+      .error-code {
+        font-size: 6rem;
+        font-weight: bold;
+        color: var(--primary-color);
+        margin: 0;
+        line-height: 1;
+      }
+      
+      .error-title {
+        font-size: 2rem;
+        margin: 0.5rem 0 1.5rem;
+      }
+      
+      .error-description {
+        margin-bottom: 2rem;
+        color: var(--text-secondary);
+      }
+      
+      .error-illustration {
+        font-size: 5rem;
+        margin: 2rem 0;
+      }
+      
+      .home-button {
+        background-color: var(--primary-color);
+        color: white;
+        border: none;
+        padding: 0.75rem 1.5rem;
+        border-radius: var(--radius);
+        font-size: 1rem;
+        cursor: pointer;
+        transition: var(--transition);
+        text-decoration: none;
+        display: inline-block;
+        margin-top: 1rem;
+      }
+      
+      .home-button:hover {
+        opacity: 0.9;
+        text-decoration: none;
+      }
+      
+      .suggestions {
+        margin-top: 2rem;
+        padding-top: 2rem;
+        border-top: 1px solid var(--border-color);
+        font-size: 0.9rem;
+      }
+      
+      .suggestions ul {
+        text-align: left;
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="app-container">
+      <header class="header">
+        <div class="links-row">
+          <a href="/">Home</a>
+          <a href="/faq">FAQ</a>
+          <a href="/about">About</a>
+        </div>
+      </header>
+      
+      <main class="main-content">
+        <div class="error-container">
+          <div class="error-illustration">🧭</div>
+          <h1 class="error-code">404</h1>
+          <h2 class="error-title">You've ventured too far</h2>
+          <p class="error-description">The page you're looking for seems to have disappeared into the digital void. Perhaps it's on a secret mission or taking a well-deserved vacation.</p>
+          
+          <a href="/" class="home-button">Return to safety</a>
+          
+          <div class="suggestions">
+            <h3>While you're here, you could try:</h3>
+            <ul>
+              <li>Double-checking the URL for typos</li>
+              <li>Using the search bar on our homepage</li>
+              <li>Exploring one of our main sections using the links above</li>
+              <li>Taking a deep breath and accepting that sometimes things just don't exist</li>
+            </ul>
+          </div>
+        </div>
+      </main>
+      
+      <footer class="footer">
+        <p>Simple Web Proxy - Your gateway to unrestricted internet</p>
+      </footer>
+    </div>
+    <script>
+      if (localStorage.getItem('darkMode') === 'enabled') {
+        document.body.classList.add('dark-mode');
+      }
+    </script>
+  </body>
+</html>
